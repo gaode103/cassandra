@@ -332,14 +332,13 @@ To take a snapshot of a single table the ``nodetool snapshot`` command syntax be
 
 ::
 
- nodetool snapshot --tag <tag> --table <table>  --<keyspace>
+ nodetool snapshot --tag <tag> --table <table> <keyspace>
 
 As an example create a snapshot for table ``magazine`` in keyspace ``catalokeyspace``:
 
 ::
 
- [ec2-user@ip-10-0-2-238 ~]$ nodetool snapshot --tag magazine --table magazine  -- 
- catalogkeyspace
+ [ec2-user@ip-10-0-2-238 ~]$ nodetool snapshot --tag magazine --table magazine catalogkeyspace
  Requested creating snapshot(s) for [catalogkeyspace] with snapshot name [magazine] and 
  options {skipFlush=false}
  Snapshot directory: magazine
